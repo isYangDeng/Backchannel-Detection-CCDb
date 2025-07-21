@@ -1,0 +1,10 @@
+__pycache__/
+
+# Numpy binary files
+*.npy
+*.npz
+
+
+preprocessing/
+data/
+*.ckpt
