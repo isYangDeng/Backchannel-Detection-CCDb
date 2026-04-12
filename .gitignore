@@ -1,10 +1,10 @@
 __pycache__/
-
-# Numpy binary files
-*.npy
-*.npz
-
-
-preprocessing/
-data/
-*.ckpt
+data/**
+opencv-4.1.0/
+OpenFace/
+dlib-19.13/
+logs/
+output/**
+!output/label.csv
+!output/cut_videos_info.csv
+*.DS_Store
