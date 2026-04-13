@@ -29,10 +29,15 @@ There are **two ways** to reproduce the results.
 
 ### Option 1: From Original Data (Full Pipeline)
 
-Download the original dataset:
+Download the original dataset (CCDb+):
 
-👉 https://huggingface.co/datasets/CardiffVisualComputing/CCDb
+👉 https://huggingface.co/datasets/CardiffVisualComputing/CCDb 
 
+After downloading, place **all data** into the following directory:
+
+```bash
+data/original_data/
+````
 Then run:
 
 ```bash
@@ -72,17 +77,17 @@ This skips all preprocessing steps.
 Examples:
 
 ```bash
-# Transformer (single fold)
-bash run_model.sh --model transformer --mode single --task Backchannel --fold_idx 0 --seed 1 --feature_type combined
-
-# Transformer (11-fold CV)
-bash run_model.sh --model transformer --mode cv --task Backchannel --seed 1 --feature_type combined
-
 # SVM (single fold)
 bash run_model.sh --model svm --mode single --task Backchannel --fold_idx 0 --seed 1 --feature_type visual
 
 # SVM (11-fold CV)
 bash run_model.sh --model svm --mode cv --task Backchannel --seed 1 --feature_type acoustic
+
+# Transformer (single fold)
+bash run_model.sh --model transformer --mode single --task Backchannel --fold_idx 0 --seed 1 --feature_type combined
+
+# Transformer (11-fold CV)
+bash run_model.sh --model transformer --mode cv --task Backchannel --seed 1 --feature_type combined
 ```
 
 ---

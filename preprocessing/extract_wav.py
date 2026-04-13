@@ -32,7 +32,7 @@ def extract_video_and_audio(input_folder, output_folder):
 
 
 input_folder = f"data/cut_data"
-output_folder = f"data/audio"
+output_folder = f"data/audi"
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 extract_video_and_audio(input_folder, output_folder)

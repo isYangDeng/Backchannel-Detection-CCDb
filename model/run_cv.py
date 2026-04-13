@@ -23,7 +23,7 @@ def main():
 
     for fold_idx in range(11):
         cmd = [
-            "python", "src/main.py",
+            "python", "model/main.py",
             "--task", args.task,
             "--seed", str(args.seed),
             "--fold_idx", str(fold_idx),
@@ -56,15 +56,15 @@ if __name__ == "__main__":
     main()
 '''
 11 fold
-nohup python src/run_cv.py --task Backchannel --seed 32678 --feature_type combined > bc_transformer_combined_seed32678.log 2>&1 & 
-nohup python src/run_cv.py --task Backchannel --seed 1234 --feature_type combined > bc_transformer_combined_seed1234.log 2>&1 &
-nohup python src/run_cv.py --task Backchannel --seed 734783 --feature_type visual > bc_transformer_visual_seed734783.log 2>&1 &
-nohup python src/run_cv.py --task Backchannel --seed 4234234 --feature_type acoustic > bc_transformer_acoustic_seed4234234.log 2>&1 &
+nohup python model/run_cv.py --task Backchannel --seed 32678 --feature_type combined > bc_transformer_combined_seed32678.log 2>&1 & 
+nohup python model/run_cv.py --task Backchannel --seed 1234 --feature_type combined > bc_transformer_combined_seed1234.log 2>&1 &
+nohup python model/run_cv.py --task Backchannel --seed 734783 --feature_type visual > bc_transformer_visual_seed734783.log 2>&1 &
+nohup python model/run_cv.py --task Backchannel --seed 4234234 --feature_type acoustic > bc_transformer_acoustic_seed4234234.log 2>&1 &
 
 
 
-nohup python src/run_cv.py --task Backchannel --seed 42 --feature_type combined > logs/bc_transformer_seed42.log 2>&1 & 
-nohup python src/run_cv.py --task Backchannel --seed 10000 --feature_type combined > logs/bc_transformer_seed10000.log 2>&1 & 
-nohup python src/run_cv.py --task Backchannel --seed 1111 --feature_type combined > logs/bc_transformer_seed1111.log 2>&1 & 
-nohup python src/run_cv.py --task Backchannel --seed 11 --feature_type combined > logs/bc_transformer_seed11.log 2>&1 & 
+nohup python model/run_cv.py --task Backchannel --seed 42 --feature_type combined > logs/bc_transformer_seed42.log 2>&1 & 
+nohup python model/run_cv.py --task Backchannel --seed 10000 --feature_type combined > logs/bc_transformer_seed10000.log 2>&1 & 
+nohup python model/run_cv.py --task Backchannel --seed 1111 --feature_type combined > logs/bc_transformer_seed1111.log 2>&1 & 
+nohup python model/run_cv.py --task Backchannel --seed 11 --feature_type combined > logs/bc_transformer_seed11.log 2>&1 & 
 '''

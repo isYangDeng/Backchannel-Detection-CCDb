@@ -87,7 +87,7 @@ def main():
         print("======================================")
 
         cmd = [
-            "python", "src/main_svm.py",
+            "python", "model/main_svm.py",
             "--task", args.task,
             "--seed", str(args.seed),
             "--fold_idx", str(fold_idx),
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     main()
 
 '''
-python src/run_cv_svm.py \
+python model/run_cv_svm.py \
   --task Backchannel \
   --seed 42333333 \
   --feature_type combined

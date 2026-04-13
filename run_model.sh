@@ -54,7 +54,7 @@ Examples:
     # SVM (single fold)
     bash run_model.sh --model svm --mode single --task Backchannel --fold_idx 0 --seed 1 --feature_type visual
     # SVM (11-fold CV)
-    bash run_model.sh --model svm --mode cv --task Backchannel --seed 1 --feature_type acoustic
+    nohup bash run_model.sh --model svm --mode cv --task Backchannel --seed 1 --feature_type combined
 EOF
 }
 
@@ -151,7 +151,7 @@ mkdir -p logs
 
 if [[ "$MODEL" == "transformer" && "$MODE" == "single" ]]; then
   CMD=(
-    python src/main.py
+    python model/main.py
     --task "$TASK"
     --seed "$SEED"
     --fold_idx "$FOLD_IDX"
@@ -179,7 +179,7 @@ if [[ "$MODEL" == "transformer" && "$MODE" == "single" ]]; then
 
 elif [[ "$MODEL" == "transformer" && "$MODE" == "cv" ]]; then
   CMD=(
-    python src/run_cv.py
+    python node l/run_cv.py
     --task "$TASK"
     --seed "$SEED"
     --feature_type "$FEATURE_TYPE"
@@ -188,7 +188,7 @@ elif [[ "$MODEL" == "transformer" && "$MODE" == "cv" ]]; then
 
 elif [[ "$MODEL" == "svm" && "$MODE" == "single" ]]; then
   CMD=(
-    python src/main_svm.py
+    python model/main_svm.py
     --task "$TASK"
     --seed "$SEED"
     --fold_idx "$FOLD_IDX"
@@ -205,7 +205,7 @@ elif [[ "$MODEL" == "svm" && "$MODE" == "single" ]]; then
 
 elif [[ "$MODEL" == "svm" && "$MODE" == "cv" ]]; then
   CMD=(
-    python src/run_cv_svm.py
+    python model/run_cv_svm.py
     --task "$TASK"
     --seed "$SEED"
     --feature_type "$FEATURE_TYPE"

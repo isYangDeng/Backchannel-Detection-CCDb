@@ -1,0 +1,743 @@
+==================================================
+Running command:
+python src/run_cv_svm.py --task Backchannel --seed 1 --feature_type combined --imbalanced 0 --root output/svm_results --summary_split test 
+==================================================
+Task: Backchannel
+Seed: 1
+Fold: 0
+Feature type: combined
+Split sizes | train=1999 | val=236 | test=232
+[Skip] acoustic feature exists: data/features/seed_1/fold_0/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_0/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_0/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_0/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_0/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_0/visual_test.npy
+
+Inspecting X_train
+  shape: (1999, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (236, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -1220.3
+  finite max: 2638.8
+
+Inspecting X_test
+  shape: (232, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+Feature shapes:
+  X_train: (1999, 240300)
+  X_val  : (236, 240300)
+  X_test : (232, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.686441,
+  "precision": 0.616541,
+  "recall": 0.780952,
+  "f1": 0.689076
+}
+
+Test result:
+{
+  "accuracy": 0.586207,
+  "precision": 0.518797,
+  "recall": 0.683168,
+  "f1": 0.589744
+}
+Task: Backchannel
+Seed: 1
+Fold: 1
+Feature type: combined
+Split sizes | train=2015 | val=216 | test=236
+[Skip] acoustic feature exists: data/features/seed_1/fold_1/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_1/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_1/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_1/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_1/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_1/visual_test.npy
+
+Inspecting X_train
+  shape: (2015, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (216, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_test
+  shape: (236, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -1220.3
+  finite max: 2638.8
+Feature shapes:
+  X_train: (2015, 240300)
+  X_val  : (216, 240300)
+  X_test : (236, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.601852,
+  "precision": 0.405172,
+  "recall": 0.734375,
+  "f1": 0.522222
+}
+
+Test result:
+{
+  "accuracy": 0.669492,
+  "precision": 0.59854,
+  "recall": 0.780952,
+  "f1": 0.677686
+}
+Task: Backchannel
+Seed: 1
+Fold: 2
+Feature type: combined
+Split sizes | train=2049 | val=202 | test=216
+[Skip] acoustic feature exists: data/features/seed_1/fold_2/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_2/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_2/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_2/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_2/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_2/visual_test.npy
+
+Inspecting X_train
+  shape: (2049, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (202, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_test
+  shape: (216, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+Feature shapes:
+  X_train: (2049, 240300)
+  X_val  : (202, 240300)
+  X_test : (216, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.722772,
+  "precision": 0.674419,
+  "recall": 0.861386,
+  "f1": 0.756522
+}
+
+Test result:
+{
+  "accuracy": 0.62037,
+  "precision": 0.425,
+  "recall": 0.796875,
+  "f1": 0.554348
+}
+Task: Backchannel
+Seed: 1
+Fold: 3
+Feature type: combined
+Split sizes | train=2069 | val=196 | test=202
+[Skip] acoustic feature exists: data/features/seed_1/fold_3/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_3/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_3/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_3/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_3/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_3/visual_test.npy
+
+Inspecting X_train
+  shape: (2069, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (196, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_test
+  shape: (202, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+Feature shapes:
+  X_train: (2069, 240300)
+  X_val  : (196, 240300)
+  X_test : (202, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.678571,
+  "precision": 0.685039,
+  "recall": 0.790909,
+  "f1": 0.734177
+}
+
+Test result:
+{
+  "accuracy": 0.688119,
+  "precision": 0.648438,
+  "recall": 0.821782,
+  "f1": 0.724891
+}
+Task: Backchannel
+Seed: 1
+Fold: 4
+Feature type: combined
+Split sizes | train=2031 | val=240 | test=196
+[Skip] acoustic feature exists: data/features/seed_1/fold_4/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_4/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_4/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_4/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_4/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_4/visual_test.npy
+
+Inspecting X_train
+  shape: (2031, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (240, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_test
+  shape: (196, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+Feature shapes:
+  X_train: (2031, 240300)
+  X_val  : (240, 240300)
+  X_test : (196, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.641667,
+  "precision": 0.717105,
+  "recall": 0.717105,
+  "f1": 0.717105
+}
+
+Test result:
+{
+  "accuracy": 0.704082,
+  "precision": 0.7,
+  "recall": 0.827273,
+  "f1": 0.758333
+}
+Task: Backchannel
+Seed: 1
+Fold: 5
+Feature type: combined
+Split sizes | train=2017 | val=210 | test=240
+[Skip] acoustic feature exists: data/features/seed_1/fold_5/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_5/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_5/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_5/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_5/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_5/visual_test.npy
+
+Inspecting X_train
+  shape: (2017, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (210, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -289.2
+  finite max: 1289.6
+
+Inspecting X_test
+  shape: (240, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+Feature shapes:
+  X_train: (2017, 240300)
+  X_val  : (210, 240300)
+  X_test : (240, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.6,
+  "precision": 0.793478,
+  "recall": 0.528986,
+  "f1": 0.634783
+}
+
+Test result:
+{
+  "accuracy": 0.625,
+  "precision": 0.71831,
+  "recall": 0.671053,
+  "f1": 0.693878
+}
+Task: Backchannel
+Seed: 1
+Fold: 6
+Feature type: combined
+Split sizes | train=2018 | val=239 | test=210
+[Skip] acoustic feature exists: data/features/seed_1/fold_6/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_6/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_6/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_6/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_6/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_6/visual_test.npy
+
+Inspecting X_train
+  shape: (2018, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (239, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -527.86096
+  finite max: 691.15063
+
+Inspecting X_test
+  shape: (210, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -289.2
+  finite max: 1289.6
+Feature shapes:
+  X_train: (2018, 240300)
+  X_val  : (239, 240300)
+  X_test : (210, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.65272,
+  "precision": 0.722222,
+  "recall": 0.59542,
+  "f1": 0.65272
+}
+
+Test result:
+{
+  "accuracy": 0.561905,
+  "precision": 0.810811,
+  "recall": 0.434783,
+  "f1": 0.566038
+}
+Task: Backchannel
+Seed: 1
+Fold: 7
+Feature type: combined
+Split sizes | train=1988 | val=240 | test=239
+[Skip] acoustic feature exists: data/features/seed_1/fold_7/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_7/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_7/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_7/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_7/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_7/visual_test.npy
+
+Inspecting X_train
+  shape: (1988, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (240, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -415.59866
+  finite max: 1014.8
+
+Inspecting X_test
+  shape: (239, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -527.86096
+  finite max: 691.15063
+Feature shapes:
+  X_train: (1988, 240300)
+  X_val  : (240, 240300)
+  X_test : (239, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.625,
+  "precision": 0.756757,
+  "recall": 0.571429,
+  "f1": 0.651163
+}
+
+Test result:
+{
+  "accuracy": 0.648536,
+  "precision": 0.728155,
+  "recall": 0.572519,
+  "f1": 0.641026
+}
+Task: Backchannel
+Seed: 1
+Fold: 8
+Feature type: combined
+Split sizes | train=1989 | val=238 | test=240
+[Skip] acoustic feature exists: data/features/seed_1/fold_8/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_8/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_8/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_8/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_8/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_8/visual_test.npy
+
+Inspecting X_train
+  shape: (1989, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (238, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -587.75354
+  finite max: 743.2307
+
+Inspecting X_test
+  shape: (240, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -415.59866
+  finite max: 1014.8
+Feature shapes:
+  X_train: (1989, 240300)
+  X_val  : (238, 240300)
+  X_test : (240, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.676471,
+  "precision": 0.777778,
+  "recall": 0.551181,
+  "f1": 0.645161
+}
+
+Test result:
+{
+  "accuracy": 0.654167,
+  "precision": 0.775862,
+  "recall": 0.612245,
+  "f1": 0.684411
+}
+Task: Backchannel
+Seed: 1
+Fold: 9
+Feature type: combined
+Split sizes | train=2011 | val=218 | test=238
+[Skip] acoustic feature exists: data/features/seed_1/fold_9/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_9/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_9/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_9/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_9/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_9/visual_test.npy
+
+Inspecting X_train
+  shape: (2011, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (218, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -428.7031
+  finite max: 947.7
+
+Inspecting X_test
+  shape: (238, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -587.75354
+  finite max: 743.2307
+Feature shapes:
+  X_train: (2011, 240300)
+  X_val  : (218, 240300)
+  X_test : (238, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.623853,
+  "precision": 0.663462,
+  "recall": 0.594828,
+  "f1": 0.627273
+}
+
+Test result:
+{
+  "accuracy": 0.642857,
+  "precision": 0.744186,
+  "recall": 0.503937,
+  "f1": 0.600939
+}
+Task: Backchannel
+Seed: 1
+Fold: 10
+Feature type: combined
+Split sizes | train=2017 | val=232 | test=218
+[Skip] acoustic feature exists: data/features/seed_1/fold_10/acoustic_train.npy
+[Skip] visual feature exists: data/features/seed_1/fold_10/visual_train.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_10/acoustic_val.npy
+[Skip] visual feature exists: data/features/seed_1/fold_10/visual_val.npy
+[Skip] acoustic feature exists: data/features/seed_1/fold_10/acoustic_test.npy
+[Skip] visual feature exists: data/features/seed_1/fold_10/visual_test.npy
+
+Inspecting X_train
+  shape: (2017, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_val
+  shape: (232, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -19616008.0
+  finite max: 30650012.0
+
+Inspecting X_test
+  shape: (218, 240300)
+  dtype: float32
+  non-finite count: 0
+  finite min: -428.7031
+  finite max: 947.7
+Feature shapes:
+  X_train: (2017, 240300)
+  X_val  : (232, 240300)
+  X_test : (218, 240300)
+
+Train result:
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+}
+
+Val result:
+{
+  "accuracy": 0.607759,
+  "precision": 0.538462,
+  "recall": 0.693069,
+  "f1": 0.606061
+}
+
+Test result:
+{
+  "accuracy": 0.642202,
+  "precision": 0.646154,
+  "recall": 0.724138,
+  "f1": 0.682927
+}
+
+======================================
+Running fold 0/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 0 --feature_type combined
+
+======================================
+Running fold 1/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 1 --feature_type combined
+
+======================================
+Running fold 2/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 2 --feature_type combined
+
+======================================
+Running fold 3/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 3 --feature_type combined
+
+======================================
+Running fold 4/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 4 --feature_type combined
+
+======================================
+Running fold 5/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 5 --feature_type combined
+
+======================================
+Running fold 6/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 6 --feature_type combined
+
+======================================
+Running fold 7/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 7 --feature_type combined
+
+======================================
+Running fold 8/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 8 --feature_type combined
+
+======================================
+Running fold 9/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 9 --feature_type combined
+
+======================================
+Running fold 10/10
+======================================
+Command: python src/main_svm.py --task Backchannel --seed 1 --fold_idx 10 --feature_type combined
+
+Found 11 folds for summary
+
+fold 00 | accuracy=0.586207 | precision=0.518797 | recall=0.683168 | f1=0.589744
+fold 01 | accuracy=0.669492 | precision=0.598540 | recall=0.780952 | f1=0.677686
+fold 10 | accuracy=0.642202 | precision=0.646154 | recall=0.724138 | f1=0.682927
+fold 02 | accuracy=0.620370 | precision=0.425000 | recall=0.796875 | f1=0.554348
+fold 03 | accuracy=0.688119 | precision=0.648438 | recall=0.821782 | f1=0.724891
+fold 04 | accuracy=0.704082 | precision=0.700000 | recall=0.827273 | f1=0.758333
+fold 05 | accuracy=0.625000 | precision=0.718310 | recall=0.671053 | f1=0.693878
+fold 06 | accuracy=0.561905 | precision=0.810811 | recall=0.434783 | f1=0.566038
+fold 07 | accuracy=0.648536 | precision=0.728155 | recall=0.572519 | f1=0.641026
+fold 08 | accuracy=0.654167 | precision=0.775862 | recall=0.612245 | f1=0.684411
+fold 09 | accuracy=0.642857 | precision=0.744186 | recall=0.503937 | f1=0.600939
+
+==============================
+Task : Backchannel
+Seed : 1
+Split: test
+==============================
+Accuracy  mean ± std: 0.640267 ± 0.041449
+Precision mean ± std: 0.664932 ± 0.114847
+Recall    mean ± std: 0.675339 ± 0.132180
+F1        mean ± std: 0.652202 ± 0.066760
