@@ -240,8 +240,8 @@ def main():
     print(f"Fold: {args.fold_idx}")
     print(f"Feature type: {args.feature_type}")
 
-    runtime_dir = os.path.join(args.runtime_root, f"seed_{args.seed}", f"fold_{args.fold_idx}")
-    feature_dir = os.path.join(args.feature_root, f"seed_{args.seed}", f"fold_{args.fold_idx}")
+    runtime_dir = os.path.join(args.runtime_root, f"svm_seed_{args.seed}", f"fold_{args.fold_idx}")
+    feature_dir = os.path.join(args.feature_root, f"svm_seed_{args.seed}", f"fold_{args.fold_idx}")
     os.makedirs(runtime_dir, exist_ok=True)
     os.makedirs(feature_dir, exist_ok=True)
 

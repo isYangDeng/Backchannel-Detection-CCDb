@@ -47,7 +47,7 @@ echo "======================================"
 #   data/cut_data
 # Output:
 #   data/openface_features
-python preprocessing/extract_openface_features.py
+python preprocessing/extract_visual_feats.py
 # :contentReference[oaicite:2]{index=2}
 
 

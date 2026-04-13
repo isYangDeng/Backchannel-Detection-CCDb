@@ -179,7 +179,7 @@ if [[ "$MODEL" == "transformer" && "$MODE" == "single" ]]; then
 
 elif [[ "$MODEL" == "transformer" && "$MODE" == "cv" ]]; then
   CMD=(
-    python node l/run_cv.py
+    python model/run_cv.py
     --task "$TASK"
     --seed "$SEED"
     --feature_type "$FEATURE_TYPE"

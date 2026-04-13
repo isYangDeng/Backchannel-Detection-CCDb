@@ -315,6 +315,7 @@ def main():
     os.makedirs(runtime_dir, exist_ok=True)
     os.makedirs(feature_dir, exist_ok=True)
 
+
     # 1. split
     train_df, val_df, test_df = build_runtime_split(
         label_csv=args.label_csv,
@@ -445,6 +446,10 @@ def main():
                 loss.backward()
                 optimizer.step()
                 scheduler.step()
+                if torch.cuda.is_available():
+                    allocated = torch.cuda.memory_allocated() / 1024**3
+                    reserved = torch.cuda.memory_reserved() / 1024**3
+                    print(f"[GPU] allocated={allocated:.2f}GB reserved={reserved:.2f}GB")
 
                 training_loss += loss.item()
 

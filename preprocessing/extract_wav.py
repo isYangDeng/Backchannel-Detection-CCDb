@@ -1,7 +1,7 @@
 import os
 import cv2
 from moviepy import VideoFileClip
-
+import time 
 def extract_video_and_audio(input_folder, output_folder):
     # Create output directory if it doesn't exist
     os.makedirs(output_folder, exist_ok=True)
@@ -35,6 +35,9 @@ input_folder = f"data/cut_data"
 output_folder = f"data/audio"
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
+start_time = time.time()
 extract_video_and_audio(input_folder, output_folder)
+end_time = time.time()
+print(f"Total runtime: {end_time - start_time:.2f} seconds")
 
-# nohup python preprocessing/extract_wav.py > extract_wav.log 2>&1 &
+# nohup python preprocessing/extract_wav.py > logs/extract_wav.log 2>&1 &

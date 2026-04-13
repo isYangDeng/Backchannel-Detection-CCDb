@@ -56,4 +56,4 @@ with tempfile.TemporaryDirectory() as tmpdir:
 end_time = time.time()
 print(f"Total runtime: {end_time - start_time:.2f} seconds")
 
-# nohup python /home/yang/Backchannel-Detection-CCDb/preprocessing/extract_openface_features.py > openface_features.log 2>&1 &
+# nohup python /home/yang/Backchannel-Detection-CCDb/preprocessing/extract_visual_feats.py > openface_features.log 2>&1 &

@@ -62,6 +62,16 @@ Download preprocessed data:
 
 👉 [https://huggingface.co/datasets/isYang66/CCDb](https://huggingface.co/datasets/isYang66/CCDb)
 
+After downloading, place **all data** into the following directory:
+
+```bash
+data/audio
+data/cut_data
+data/openface_features
+data/cut_videos_info.csv
+data/label.csv
+````
+
 Then directly run:
 
 ```bash
@@ -88,6 +98,7 @@ bash run_model.sh --model transformer --mode single --task Backchannel --fold_id
 
 # Transformer (11-fold CV)
 bash run_model.sh --model transformer --mode cv --task Backchannel --seed 1 --feature_type combined
+
 ```
 
 ---
