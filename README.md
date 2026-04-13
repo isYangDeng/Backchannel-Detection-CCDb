@@ -65,9 +65,9 @@ Download preprocessed data:
 After downloading, place **all data** into the following directory:
 
 ```bash
-data/audio
-data/cut_data
-data/openface_features
+data/audio/
+data/cut_data/
+data/openface_features/
 data/cut_videos_info.csv
 data/label.csv
 ````
