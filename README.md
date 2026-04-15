@@ -68,8 +68,6 @@ After downloading, place **all data** into the following directory:
 data/audio/
 data/cut_data/
 data/openface_features/
-data/cut_videos_info.csv
-data/label.csv
 ````
 
 Then directly run:
@@ -148,24 +146,28 @@ sudo apt-get install python3-dev libtbb2 libtbb-dev libjpeg-dev libpng-dev libti
 
 ---
 
-### Install OpenCV (required by OpenFace)
+### Install the required system libraries for OpenFace
 
 ```bash
-wget https://github.com/opencv/opencv/archive/4.1.0.zip
-sudo unzip 4.1.0.zip
-cd opencv-4.1.0
-sudo mkdir build
-cd build
-
-sudo cmake -D CMAKE_BUILD_TYPE=RELEASE \
-           -D CMAKE_INSTALL_PREFIX=/usr/local \
-           -D BUILD_TIFF=ON \
-           -D WITH_TBB=OFF ..
-
-sudo make -j2
-sudo make install
-sudo ldconfig
-cd ../..
+sudo apt-get update
+sudo apt-get install -y \
+  libopencv-dev \
+  cmake \
+  build-essential \
+  libopenblas-dev \
+  libboost-all-dev \
+  libtbb-dev \
+  python3-dev \
+  python3-numpy \
+  libgtk2.0-dev \
+  pkg-config \
+  libavcodec-dev \
+  libavformat-dev \
+  libswscale-dev \
+  libjpeg-dev \
+  libpng-dev \
+  libtiff-dev \
+  libdc1394-dev
 ```
 
 ---
@@ -173,16 +175,15 @@ cd ../..
 ### Install dlib
 
 ```bash
+cd ~
 wget http://dlib.net/files/dlib-19.13.tar.bz2
 tar xf dlib-19.13.tar.bz2
 cd dlib-19.13
-sudo mkdir build
-cd build
-sudo cmake ..
-sudo cmake --build . --config Release
+mkdir -p build && cd build
+cmake ..
+cmake --build . --config Release -j"$(nproc)"
 sudo make install
 sudo ldconfig
-cd ../..
 ```
 
 ---
@@ -190,16 +191,24 @@ cd ../..
 ### Install OpenFace
 
 ```bash
+cd ~
 git clone https://github.com/TadasBaltrusaitis/OpenFace.git
 cd OpenFace
+bash ./download_models.sh
 mkdir build
 cd build
+sudo sed -i 's/cv::Mat temp = img;/IplImage temp = cvIplImage(img);/' /usr/local/include/dlib/opencv/cv_image.h
+cmake \
+  -D CMAKE_BUILD_TYPE=RELEASE \
+  -D CMAKE_C_COMPILER=/usr/bin/gcc \
+  -D CMAKE_CXX_COMPILER=/usr/bin/g++ \
+  -D OpenCV_DIR=/usr/lib/x86_64-linux-gnu/cmake/opencv4 \
+  ..
 
-sudo cmake -D CMAKE_CXX_COMPILER=/usr/bin/g++ \
-           -D CMAKE_C_COMPILER=/usr/bin/gcc \
-           -D CMAKE_BUILD_TYPE=RELEASE ..
+make -j1
+cd ~/OpenFace
+bash ./download_models.sh
 
-make -j2
 ```
 
 ---
